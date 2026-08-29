@@ -1,0 +1,517 @@
+/* =========================
+   General
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+/* =========================
+   Home Page
+========================= */
+
+.hero {
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.hero-buttons .btn {
+    width: auto;
+
+    padding: 12px 25px;
+}
+
+.secondary-btn {
+    background-color: #555;
+}
+
+.secondary-btn:hover {
+    background-color: #333;
+}
+
+
+/* =========================
+   Features
+========================= */
+
+.features {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+}
+
+.features > h2 {
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    font-size: 30px;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    background-color: white;
+
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    color: #666;
+}
+
+
+/* =========================
+   Home Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   Login & Register
+========================= */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-box h1 {
+    text-align: center;
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.auth-box h2 {
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.auth-box > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* Form */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+/* Button */
+
+.btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Auth link */
+
+.auth-link {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    background-color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.navbar nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: #444;
+
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Dashboard
+========================= */
+
+.dashboard {
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+}
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    color: #666;
+}
+
+.dashboard-header .btn {
+    width: auto;
+
+    padding: 12px 20px;
+}
+
+
+/* =========================
+   Statistics
+========================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+.stat-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* =========================
+   Tasks
+========================= */
+
+.tasks-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+}
+
+.task-card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.task-card:last-child {
+    border-bottom: none;
+}
+
+.task-card h3 {
+    margin-bottom: 6px;
+}
+
+.task-card p {
+    color: #666;
+}
+
+
+/* =========================
+   Task Status
+========================= */
+
+.status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.completed {
+    background-color: #dcfce7;
+
+    color: #166534;
+}
+
+.pending {
+    background-color: #fef3c7;
+
+    color: #92400e;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .dashboard-header .btn {
+        width: auto;
+    }
+
+    .task-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
