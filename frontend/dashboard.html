@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            TaskFlow
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Tasks</a>
+            <a href="#">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Dashboard</h1>
+
+                <p>
+                    Welcome back! Here's what's happening with your tasks.
+                </p>
+            </div>
+
+            <button class="btn">
+                + Add Task
+            </button>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p>12</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p>7</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p>5</p>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Tasks -->
+
+        <section class="tasks-section">
+
+            <div class="section-header">
+
+                <h2>Recent Tasks</h2>
+
+                <a href="#">View All</a>
+
+            </div>
+
+
+            <div class="task-list">
+
+                <div class="task-card">
+
+                    <div>
+                        <h3>Learn SQLAlchemy</h3>
+
+                        <p>
+                            Complete SQLAlchemy ORM basics.
+                        </p>
+                    </div>
+
+                    <span class="status completed">
+                        Completed
+                    </span>
+
+                </div>
+
+
+                <div class="task-card">
+
+                    <div>
+                        <h3>Build FastAPI Project</h3>
+
+                        <p>
+                            Create TaskFlow backend.
+                        </p>
+                    </div>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <div class="task-card">
+
+                    <div>
+                        <h3>Create Database</h3>
+
+                        <p>
+                            Setup MySQL database.
+                        </p>
+                    </div>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
