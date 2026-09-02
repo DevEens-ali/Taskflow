@@ -1,88 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TaskFlow - Register</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="auth-container">
+      <div class="auth-box">
+        <h1>TaskFlow</h1>
 
-        <div class="auth-box">
+        <h2>Create Account</h2>
 
-            <h1>TaskFlow</h1>
+        <p>Create your account and start managing tasks.</p>
 
-            <h2>Create Account</h2>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
 
-            <p>Create your account and start managing tasks.</p>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
 
-            <form>
+            <div class="password-container">
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+              />
 
-                <div class="form-group">
-                    <label for="name">Full Name</label>
+              <button type="button" id="togglePassword" class="eye-button">
+                👁
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password"> Confirm Password </label>
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your name"
-                        required
-                    >
-                </div>
+            <div class="password-container">
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm your password"
+                required
+              />
 
-                <div class="form-group">
-                    <label for="email">Email</label>
+              <button
+                type="button"
+                id="toggleConfirmPassword"
+                class="eye-button"
+              >
+                👁
+              </button>
+            </div>
+          </div>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-                </div>
+          <div class="form-group">
+            <label for="email">Email</label>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
 
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Create a password"
-                        required
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="confirm-password">
-                        Confirm Password
-                    </label>
-
-                    <input
-                        type="password"
-                        id="confirm-password"
-                        placeholder="Confirm your password"
-                        required
-                    >
-                </div>
-
-                <button type="submit" class="btn">
-                    Register
-                </button>
-
-            </form>
-
-            <p class="auth-link">
-                Already have an account?
-                <a href="login.html">Login</a>
-            </p>
-
-        </div>
-
+        <p class="auth-link">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </div>
     </div>
-
-</body>
+    <script src="js/register.js"></script>
+  </body>
 </html>

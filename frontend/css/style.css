@@ -240,6 +240,31 @@ footer p {
 
     border-color: #2563eb;
 }
+.password-container {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.password-container input {
+    padding-right: 45px;
+}
+
+.eye-button {
+    position: absolute;
+
+    right: 10px;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
 
 
 /* Button */
